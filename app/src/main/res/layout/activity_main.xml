@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#f7f7f7"
+    tools:context=".MainActivity">
+
+    <!--Imageview for contact thumbanail/image-->
+    <ImageView
+        android:id="@+id/ThumbnailIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="#c0c0c0"
+        android:src="@drawable/person" />
+
+    <!--EditText:FirstName-->
+    <EditText
+        android:id="@+id/firstnameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ThumbnailIv"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"/>
+
+    <!-- EditText:Last Name-->
+    <EditText
+        android:id="@+id/lastnameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstnameET"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5" />
+
+    <!--EditText:Mobile-->
+    <EditText
+        android:id="@+id/mobileET"
+        android:layout_below="@id/lastnameET"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:hint="Mobile"
+        android:textColorHint="#c5c5c5"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <!--EditText:Phone(Home)-->
+    <EditText
+        android:id="@+id/phonehomeET"
+        android:layout_below="@id/mobileET"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:hint="Phone ( Home )"
+        android:textColorHint="#c5c5c5"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <!--EditText:Email-->
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_below="@id/phonehomeET"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:hint="E-Mail"
+        android:textColorHint="#c5c5c5"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <!--EditText:Address-->
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_below="@id/emailET"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:hint="Address"
+        android:textColorHint="#c5c5c5"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"/>
+
+    <!--FloatingActionButton:To save the contact-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savecontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/done"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
